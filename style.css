@@ -194,9 +194,14 @@ iframe {
 
 /* 화면 너비가 좁아질 때 사파리 외곽 잘림 방지 */
 @media (max-width: 1340px) {
-    .grid-container {
-        grid-template-columns: 640px;
-        width: 640px;
-        margin: 0 auto;
-    }
+   .grid-container {
+    display: grid;
+    grid-template-columns: 640px 640px; 
+    gap: 40px; 
+    margin: 0 auto; 
+    width: 1320px; 
+    
+    /* [핵심 추가] 옆 카드가 길어져도 내 카드는 강제로 늘어나지 않고 상단 고정 */
+    align-items: start; 
+}
 }
