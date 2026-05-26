@@ -19,7 +19,7 @@
         <div class="project-card">
             <div class="art-header-info">
                 <h2 class="art-title">이스케이프 (Escape : 경계의 바다)</h2>
-                <p class="art-spec">디지털 캔버스 위 코딩 (p5.js) / 600×400 px / 정적 조형</p>
+                <p class="art-spec">디지털 캔버스 위 인터랙티브 코딩 (p5.js) / 600×400 px / 정적 조형</p>
             </div>
             
             <iframe src="task1/index.html" title="과제 1"></iframe>
@@ -81,7 +81,7 @@
         <div class="project-card">
             <div class="art-header-info">
                 <h2 class="art-title">자화상 (Self-Portrait)</h2>
-                <p class="art-spec">디지털 캔버스 위 코딩 (p5.js) / 600×400 px / 정적 조형</p>
+                <p class="art-spec">디지털 캔버스 위 인터랙티브 코딩 (p5.js) / 600×400 px / 정적 조형</p>
             </div>
             
             <iframe src="task2/index.html" title="과제 2"></iframe>
@@ -111,24 +111,39 @@
         <div class="project-card">
             <div class="art-header-info">
                 <h2 class="art-title">자화상 II (Interactive Portrait)</h2>
-                <p class="art-spec">디지털 캔버스 위 인터랙티브 코딩 / 600×400 px / 동적 조형 및 반응형</p>
+                <p class="art-spec">디지털 캔버스 위 인터랙티브 코딩 (p5.js) / 600×400 px / 동적 조형 및 반응형</p>
             </div>
             
             <iframe src="task3/index.html" title="과제 3"></iframe>
             
+        <div class="project-card">
+            <div class="art-header-info">
+                <h2 class="art-title">자화상 II (Self-Portrait II : 유동하는 자아)</h2>
+                <p class="art-spec">디지털 캔버스 위 인터랙티브 코딩 (p5.js) / 600×400 px / 가변 애니메이션</p>
+            </div>
+            
+            <iframe src="task4/index.html" title="과제 4"></iframe>
+            
             <details class="project-desc">
                 <summary>Curator's Commentary (작품 해설)</summary>
                 <div class="desc-content notation-style">
-                    <p class="art-subtitle">"상호작용을 통한 감정의 상태 전이와 관객 인터랙션"</p>
+                    <p class="art-subtitle">"가변적 자아와 관객의 조응: 코드화된 신체성과 상호작용"</p>
                     
-                    <h3>⌨️ Keyboard 기능</h3>
-                    <p><strong>• 방향키를 통한 상태의 변형:</strong> 방향키 조작으로 머리색의 유기적 변경이 가능합니다. 다채로운 색감 레이어를 구현하여 가상 자아의 심리 변화를 체험해 볼 수 있으며, <code>스페이스바</code>를 누르면 즉시 고유의 본래 색으로 복구됩니다.<br>
-                    <strong>• A 키 (감정의 투영):</strong> 키보드 A 키를 누르면 눈의 도상이 하트로 즉각 치환됩니다. 한글 입력 상태일 때 입력 프로세스가 차단되는 환경을 극복하기 위해 'A', 'a', 'ㅁ' 모든 아스키코드와 한글 조합에 실행되도록 예외 코드를 엄격히 설계했습니다.<br>
-                    <strong>• M 키 (메시지 전송):</strong> 'M', 'm', 'ㅡ' 키 입력 시 입의 형태학적 양감은 축소되지만, 화면 내부에서 거대한 하트 오브제를 사출해 시각적 볼거리를 전송합니다.</p>
+                    <h3>1. 관음(Viewing)에서 참여(Interaction)로의 전환</h3>
+                    <p>본 작품은 고정된 자화상의 개념을 탈피하여, 관객과의 실시간 상호작용을 통해 비로소 완결되는 디지털 키네틱 미디어 아트이다. 화면 속 인물의 눈동자는 마우스 좌표(mouseX, mouseY)의 변화를 기민하게 추적하며 실시간으로 시선을 이동한다. 이는 감상자와 작품 속 텍스트 간의 물리적 주객 관계를 뒤흔든다. 관객이 자화상을 바라보는 동시에, 자화상 역시 관객을 인지하고 끊임없이 응시하는 상호 주체적(Inter-subjective)인 경험을 선사하는 것이다.</p>
                     
-                    <h3>🖱️ Mouse 기능</h3>
-                    <p><strong>• 실시간 마우스 클릭 트리거:</strong> 화면 캔버스 영역 클릭 시 인물이 눈을 차단(감음)하도록 연출했습니다. 기존 감정 구현 조건문(if) 뒤에 유기적인 인터랙션을 위해 <code>else if</code> 구문을 중첩 적용해 설계 완성도를 높였습니다.<br>
-                    <strong>• 시선 추적 (Eye-tracking Algorithm):</strong> 마우스의 실시간 <code>mouseX</code>, <code>mouseY</code> 벡터 값에 반응하여 안구 내부의 눈동자가 포인터를 끝없이 추적하는 생동감을 구현했습니다.</p>
+                    <h3>2. 입력된 키(Key)를 통한 감정의 레이어와 기호학적 변이</h3>
+                    <p>작가는 자화상의 외형적 요소를 고정하지 않고, 관객이 입력하는 키보드와 마우스 이벤트를 통해 외형과 감정의 상태를 시각적으로 분출시킨다.<br><br>
+                    <strong>• 염색을 통한 정체성의 확장 (방향키 및 스페이스바):</strong> 25년간 고수해 온 짙은 갈색의 헤어 스타일은 방향키 조작에 따라 붉은색, 녹색, 청록색 등 과감한 원색조로 순식간에 탈바꿈한다. 이는 시간의 축적에 갇혀있던 자아를 확장하고, 고착화된 정체성을 가변적인 상태로 해방하려는 유희적 시도이다. 스페이스바는 이 모든 일탈을 다시 본연의 실존적 자아(#281E14)로 되돌리는 복원의 키로 기능한다.<br><br>
+                    <strong>• 정동(Affect)의 표출 (A, M 키 및 마우스 클릭):</strong> 관객이 'A'와 'M' 키를 입력함에 따라 눈과 입은 사랑을 갈구하는 '하트(Heart)'라는 기호적 도상으로 전이된다. 반면, 마우스를 클릭하는 순간 양쪽 눈은 단호하게 윙크(Wink) 혹은 감은 눈의 형태(line)로 평면화된다. 이는 현대인이 디지털 세계 속에서 아바타를 통해 감정을 과장하거나 은폐하는 방식에 대한 메타포이기도 하다.</p>
+                    
+                    <h3>3. 시스템 오류의 극복과 포용적 인터페이스</h3>
+                    <p>작품의 기술적 구조에서 주목해야 할 점은 입력 인터페이스의 세밀한 보정이다. 한국어 입력 환경('ㅁ', 'ㅡ', 'ㅎ')에서 발생할 수 있는 키 입력 누락 오류를 코드 레벨에서 선제적으로 통합 설계했다. 이는 디지털 아트가 직면하기 쉬운 시스템적 단절을 막고, 관객이 몰입을 깨지 않은 채 작품과 대화할 수 있도록 배려한 인간 중심적 인터페이스 디자인의 실천이다.</p>
+                    
+                    <blockquote class="curator-note">
+                        <strong>큐레이터 노트 (Curator's Note)</strong><br>
+                        &lt;자화상 II&gt;는 '나'라는 주관적 존재가 타인(관객)의 개입을 통해 어떻게 다채롭게 변주될 수 있는지를 탐구한 수작입니다. 굳건한 눈썹과 새치, 댄디컷으로 정의된 과거의 완고했던 자아는, 관객의 손끝에 따라 윙크를 하고, 머리색을 바꾸며, 거대한 하트를 뿜어내는 가변적 미디엄으로 거듭납니다. 키보드의 'G' 키를 통해 이 찰나의 상호작용을 10초짜리 GIF라는 디지털 포맷으로 박제할 수 있게 한 설정은, 가상 세계 속에서 끊임없이 변모하는 현대인의 유동적 자아를 소장 가능한 형태로 재탄생시키는 현대 예술의 영리한 종착지입니다.
+                    </blockquote>
                 </div>
             </details>
         </div>
